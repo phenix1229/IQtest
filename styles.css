@@ -10,12 +10,15 @@
 body {
     display: flex;
     flex-direction: column;
+    border: 3px solid grey;
 }
 
 header {
+    color: blue;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    border-bottom: 3px solid grey;
 }
 
 .primary-nav {
@@ -39,17 +42,21 @@ header {
 
 li {
     padding: 10px 20px;
+    text-align: center;
 }
 
 .main-body {
     display: flex;
     flex-direction: row;
-    justify-content: left;
 }
 
-.side-nav, .form-space {
+.side-nav {
     display: flex;
     flex-direction: column;
+    width: 15vw;
+    min-width: 150px;
+    height: 100vh;
+    border-right: 3px solid grey;
 }
 
 .side-nav-links {
@@ -58,24 +65,62 @@ li {
     font-size: 25px;
 }
 
-.form-space {
-    display: table;
-    justify-self: center;
+.work-area {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-content: center;
+}
+
+.section-name {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    padding: 5% 50% 5% 30%;
+    /* width: 100%; */
+    /* padding-right: 0px; */
+    font-size: 25px;
+    /* text-align: center; */
+    border-bottom: 3px solid grey;
+}
+
+.form-space {
+    display: flex;
+    flex-direction: row;
+    /* align-content: center; */
+    width: 100%;
+    /* min-width: 50vw;
+    max-width: 250px; */
+    /* padding: 5%; */
     font-size: 40px;
 }
 
-.form-row {
-    display: table-row;
+form {
+    /* display: table; */
+    width: 100%;
+    align-content: center;
 }
 
-.form-label {
-    display: table-cell;
+/* .form-row {
+    display: table-row;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+} */
 
+.form-label {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* padding: 5px 15px 5px 10px; */
+    border: 1px solid black;
 }
 
 .form-option {
-    display: table-cell;
+    display: flex;
+    flex-direction: column;
     font-size: 40px;
+    width: 50%;
+    /* padding: 5px 15px; */
+    border: 1px solid black;
 }
